@@ -1,0 +1,16 @@
+<!--pages/book/book.wxml-->
+<text style="text-align:center;">扫码添加书籍</text>
+
+<button type="primary" bindtap="scanCode">添加书籍</button>
+
+<view wx:for="{{books}}">
+<view>{{item.title}}</view>
+<image lazy-load="true" src="{{item.img}}"></image>
+<text>{{item.summary}}</text>
+</view>
+
+
+<!-- <button type="primary" open-type="contact" >客服</button>
+<camera device-position="back" style="width:300px;height:300px;"></camera>
+<button type="primary" bindtap="getImg">拍照</button>
+<image mode="scaleToFill" src="{{src}}"></image> -->

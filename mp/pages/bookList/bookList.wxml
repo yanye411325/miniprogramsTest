@@ -1,0 +1,11 @@
+<!--mp/pages/bookList/bookList.wxml-->
+<view wx:for="{{books}}" wx:key="_id">
+  <view> {{item.title}} </view>
+  <image lazy-load="true" src="{{item.img}}"></image>
+  <text>{{item.summary}}</text>
+</view>
+
+
+<view wx:for="{{arr}}" wx:key="id">
+  <view> {{item.text}} </view>
+</view>
